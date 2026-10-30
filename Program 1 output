@@ -1,0 +1,15 @@
+8-bit 2's Complement Arithmetic
+
+1. (34 + (+27))
+Operand 1: 00100010
+Operand 2: 00011011
+Binary Result: 00111101
+Decimal Result: 61
+Overflow: No
+
+2. ((-34) - (-27))
+Operand 1: 11011110
+Operand 2: 11100101
+Binary Result: 11100101
+Decimal Result: -7
+Overflow: No
