@@ -1,0 +1,28 @@
+def to_binary(n):
+    return format(n & 0xFF, '08b')
+
+def binary_arithmetic(a, b, operation):
+    print("\nOperand 1:", to_binary(a))
+    print("Operand 2:", to_binary(b))
+
+    if operation == '+':
+        result = a + b
+    else:
+        result = a - b
+
+    print("Binary Result:", to_binary(result))
+    print("Decimal Result:", result)
+
+    if result < -128 or result > 127:
+        print("Overflow: Yes")
+    else:
+        print("Overflow: No")
+
+
+print("8-bit 2's Complement Arithmetic")
+
+print("\n1. (34 + (+27))")
+binary_arithmetic(34, 27, '+')
+
+print("\n2. ((-34) - (-27))")
+binary_arithmetic(-34, -27, '-')
