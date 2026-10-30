@@ -1,0 +1,13 @@
+ROL Operation
+Original: 10110110
+Step 1 : 01101101
+Step 2 : 11011010
+Final Result: 11011010
+
+RCL Operation
+Original: 10110110
+Initial Carry: 0
+Step 1 : 01101100 Carry: 1
+Step 2 : 11011001 Carry: 0
+Final Result: 11011001
+Final Carry: 0
