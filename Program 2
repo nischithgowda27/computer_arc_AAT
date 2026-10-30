@@ -1,0 +1,33 @@
+def rotate_left_without_carry(num, positions):
+    print("\nROL Operation")
+    print("Original:", num)
+
+    for i in range(positions):
+        num = num[1:] + num[0]
+        print("Step", i + 1, ":", num)
+
+    print("Final Result:", num)
+
+
+def rotate_left_with_carry(num, carry, positions):
+    print("\nRCL Operation")
+    print("Original:", num)
+    print("Initial Carry:", carry)
+
+    for i in range(positions):
+        temp = num[0]
+        num = num[1:] + carry
+        carry = temp
+
+        print("Step", i + 1, ":", num,
+              "Carry:", carry)
+
+    print("Final Result:", num)
+    print("Final Carry:", carry)
+
+
+binary = "10110110"
+
+rotate_left_without_carry(binary, 2)
+
+rotate_left_with_carry(binary, '0', 2)
